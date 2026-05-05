@@ -1,0 +1,20 @@
+# config.yaml
+api:
+  url: "http://localhost:8000"   # адрес FastAPI
+
+models:
+  toxicity: "bert_toxicity"
+  empathy: "sentiment_proxy"
+  semantic: "faiss_centroid"
+
+corpus:
+  path: "corpus/ethical_corpus.txt"
+
+evaluation:
+  default_tau: 0.3
+
+preprocessing:
+  enabled: true
+  lower_case: false
+  remove_extra_spaces: true
+  fix_unicode: true
